@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "el:init": "eslint --init",
+    "el:check": "eslint .",
+    "el:fix": "eslint --fix"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,10 @@
   "homepage": "https://github.com/anggavb/koda-b7-node1#readme",
   "dependencies": {
     "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2",
+    "globals": "^17.4.0"
   }
 }

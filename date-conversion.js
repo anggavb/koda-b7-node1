@@ -9,7 +9,7 @@ export const chooseMenu = async (rl) => {
   console.log('0. Exit')
 
   try {
-    let choice = await rl.question("Masukkan pilihan: ")
+    const choice = await rl.question("Masukkan pilihan: ")
     switch (choice) {
       case '1':
         dateFormatter(rl)
@@ -63,4 +63,10 @@ const builtInDateFormatter = async (rl) => {
   }
 
   rl.close();
+}
+
+let sum = 0
+for (let i = 0; i <=10; i++) {
+  sum += i
+  
 }
