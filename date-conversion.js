@@ -6,8 +6,8 @@ export const dateFormater = async () => {
   let res;
   const rl = readline.createInterface({ input, output });
   let answer = await rl.question('Masukkan tanggal (dd-mm-yyyy): ');
-  answer = moment(answer, 'D-MM-YYYY').format('D/MM/YYYY')
-  if (answer != 'Invalid date') {
+  if (moment(answer, "DD-MM-YYYY", true).isValid()) {
+    answer = moment(answer, 'D-MM-YYYY').format('DD/MM/YYYY')
     console.log(`Tanggal berhasil diubah ${answer}`)
   } else {
     console.log(`Format tanggal salah!`)
