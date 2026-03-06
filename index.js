@@ -8,7 +8,7 @@ const rl = readline.createInterface({ input, output });
 // formaterBuiltIn(rl)
 menu(rl)
 
-const validTypeOf = 'Im valid string'
+const validTypeOf = 'Im valid string';;;;;;
 typeof validTypeOf == 'string'
 const unused = 'Please use me 😭'
 
